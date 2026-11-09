@@ -3,7 +3,7 @@ from gliner import GLiNER
 import csv
 
 model = GLiNER.from_pretrained("urchade/gliner_multi_pii-v1")
-LABELS = ["person", "school", "university", "organization", "workplace", "street address",
+LABELS = ["person", "school", "university", "organization", "workplace", "address",
           "city", "zip code", "email", "phone number"] # remove or add factors if we want more/less stuff
 
 def redact(text):
